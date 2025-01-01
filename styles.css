@@ -1,11 +1,11 @@
-/* Reset dasar */
+/* RESET DASAR */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Mengatur font dan warna default */
+/* FONT & WARNA DASAR */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
@@ -13,13 +13,14 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border-bottom: 1px solid #eee;
+  position: relative;
 }
 
 .logo {
@@ -27,15 +28,30 @@ body {
   font-size: 1.25rem;
 }
 
+/* MENU TOGGLE (untuk mobile) */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: none; /* disembunyikan di desktop */
+}
+
+/* NAV-LINKS */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 2rem;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #333;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   transition: color 0.3s;
 }
 
@@ -43,20 +59,22 @@ body {
   color: #555;
 }
 
-#theme-toggle {
-  padding: 0.5rem 1rem;
+/* THEME TOGGLE */
+.theme-toggle {
+  background: none;
   border: 1px solid #333;
-  background-color: transparent;
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
   transition: background-color 0.3s;
 }
 
-#theme-toggle:hover {
+.theme-toggle:hover {
   background-color: #333;
   color: #fff;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
   display: flex;
   align-items: center;
@@ -76,7 +94,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.hero .highlight {
+.highlight {
   color: #3498db;
 }
 
@@ -98,7 +116,7 @@ body {
   background-color: #555;
 }
 
-/* About Section */
+/* ABOUT SECTION */
 .about {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -132,7 +150,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Projects Section */
+/* PROJECTS SECTION */
 .projects {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -193,7 +211,7 @@ body {
   background-color: #555;
 }
 
-/* Skills Section */
+/* SKILLS SECTION */
 .skills {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -227,7 +245,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
 .contact {
   padding: 3rem 2rem;
   max-width: 800px;
@@ -255,7 +273,7 @@ body {
   font-size: 1rem;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -267,7 +285,37 @@ footer p {
   color: #666;
 }
 
-/* Dark Mode */
+/* MEDIA QUERIES UNTUK RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px; /* geser di bawah navbar */
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    /* disembunyikan di luar layar */
+  }
+
+  .nav-links.active {
+    transform: translateX(0%);
+    /* muncul di layar */
+  }
+
+  .menu-toggle {
+    display: block; /* Tampilkan di mobile */
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+  }
+}
+
+/* DARK MODE */
 .dark-mode {
   background-color: #222 !important;
   color: #eee !important;
@@ -277,7 +325,7 @@ footer p {
   border-bottom: 1px solid #444;
 }
 
-.dark-mode #theme-toggle {
+.dark-mode .theme-toggle {
   border: 1px solid #eee;
 }
 
