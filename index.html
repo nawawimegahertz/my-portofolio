@@ -5,56 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio Saya</title>
 
-  <!-- Import file CSS -->
+  <!-- Memanggil file CSS -->
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Google Font (opsional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link 
+  <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
   />
 
-  <!-- Font Awesome (ikon) -->
-  <link 
+  <!-- Font Awesome untuk ikon (contoh) -->
+  <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnFw+fT4P8mksCHRqFzR6d9RGpScIk2NGuNiSr2mOi99zVcPFJ5x6CWy0G8fTrl3qS8jmFQfA=="
+    integrity="sha512-Fo3rlrZj/k7ujTnH2N1Xph7aQwp7AwwL12XzGIVheYmQ19ZCq5362XWZQGQle4n0p0Z1PxuXKuW8jTxsQo8O/A=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 </head>
 <body>
-  <!-- HEADER / NAVIGATION -->
+  <!-- Bagian Header / Navigasi -->
   <header>
     <nav class="navbar">
-      <!-- Logo / Merek -->
       <div class="logo">MyPortfolio</div>
 
-      <!-- Tombol toggle menu (responsive) -->
-      <button class="menu-toggle" id="menu-toggle">
+      <!-- Tombol menu (hamburger) untuk tampilan mobile -->
+      <div class="menu-toggle" id="menu-toggle">
         <i class="fas fa-bars"></i>
-      </button>
+      </div>
 
-      <!-- Daftar Link Navigasi -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about"><i class="fas fa-user"></i> Tentang</a></li>
-        <li><a href="#projects"><i class="fas fa-briefcase"></i> Proyek</a></li>
-        <li><a href="#skills"><i class="fas fa-cogs"></i> Keahlian</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+        <li>
+          <a href="#about">
+            <i class="fas fa-user"></i> Tentang
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <i class="fas fa-briefcase"></i> Proyek
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <i class="fas fa-cogs"></i> Keahlian
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="fas fa-envelope"></i> Kontak
+          </a>
+        </li>
       </ul>
 
-      <!-- Tombol Toggle Dark Mode -->
-      <button id="theme-toggle" class="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
+      <button id="theme-toggle">Toggle Dark Mode</button>
     </nav>
   </header>
 
-  <!-- BAGIAN HERO -->
+  <!-- Bagian Hero -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Halo, Saya <span class="highlight">Ibnu Aqil</span></h1>
+      <h1>Halo, Saya <span class="highlight">Nama Anda</span></h1>
       <p>
         Seorang <strong>Profesional</strong> yang berfokus pada <strong>Web Development</strong> 
         dan selalu antusias mempelajari teknologi baru untuk menciptakan solusi terbaik.
@@ -63,10 +74,11 @@
     </div>
   </section>
 
-  <!-- SECTION ABOUT -->
+  <!-- Section About -->
   <section id="about" class="about">
     <h2>Tentang Saya</h2>
     <div class="about-content">
+      <!-- Ganti "profile.jpg" sesuai nama file di folder assets -->
       <img
         src="assets/profile.jpeg"
         alt="Foto Profil"
@@ -87,12 +99,13 @@
     </div>
   </section>
 
-  <!-- SECTION PROJECTS -->
+  <!-- Section Projects -->
   <section id="projects" class="projects">
     <h2>Proyek Terbaru</h2>
     <div class="cards">
       <!-- Card 1 -->
       <div class="card">
+        <!-- Ganti "project1.jpg" sesuai nama file di folder assets -->
         <img
           src="assets/project1.png"
           alt="Project 1"
@@ -106,6 +119,7 @@
       </div>
       <!-- Card 2 -->
       <div class="card">
+        <!-- Ganti "project2.jpg" sesuai nama file di folder assets -->
         <img
           src="assets/project2.png"
           alt="Project 2"
@@ -119,6 +133,7 @@
       </div>
       <!-- Card 3 -->
       <div class="card">
+        <!-- Ganti "project3.jpg" sesuai nama file di folder assets -->
         <img
           src="assets/project3.png"
           alt="Project 3"
@@ -133,7 +148,7 @@
     </div>
   </section>
 
-  <!-- SECTION SKILLS -->
+  <!-- Section Skills -->
   <section id="skills" class="skills">
     <h2>Keahlian</h2>
     <div class="skills-list">
@@ -156,12 +171,12 @@
     </div>
   </section>
 
-  <!-- SECTION CONTACT -->
+  <!-- Section Contact -->
   <section id="contact" class="contact">
     <h2>Kontak</h2>
     <p>
       Tertarik untuk bekerja sama? Silakan hubungi saya melalui
-      <a href="mailto:ibnu-aqil@tastmemail.com">ibnu-aqil@tastmemail.com</a> 
+      <a href="mailto:emailanda@example.com">emailanda@example.com</a> 
       atau isi form di bawah ini.
     </p>
     <form class="contact-form">
@@ -172,12 +187,12 @@
     </form>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Bagian Footer -->
   <footer>
     <p>&copy; 2025 - Nama Anda. Dibuat dengan cinta.</p>
   </footer>
 
-  <!-- Import file JavaScript -->
+  <!-- Memanggil file JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
