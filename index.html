@@ -4,31 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio Saya</title>
-  <!-- Memanggil file CSS -->
+
+  <!-- Import file CSS -->
   <link rel="stylesheet" href="styles.css" />
+
   <!-- Google Font (opsional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
+  <link 
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
   />
+
+  <!-- Font Awesome (ikon) -->
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnFw+fT4P8mksCHRqFzR6d9RGpScIk2NGuNiSr2mOi99zVcPFJ5x6CWy0G8fTrl3qS8jmFQfA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-  <!-- Bagian Header / Navigasi -->
+  <!-- HEADER / NAVIGATION -->
   <header>
     <nav class="navbar">
+      <!-- Logo / Merek -->
       <div class="logo">MyPortfolio</div>
-      <ul class="nav-links">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#skills">Keahlian</a></li>
-        <li><a href="#contact">Kontak</a></li>
+
+      <!-- Tombol toggle menu (responsive) -->
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Daftar Link Navigasi -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"><i class="fas fa-user"></i> Tentang</a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase"></i> Proyek</a></li>
+        <li><a href="#skills"><i class="fas fa-cogs"></i> Keahlian</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
       </ul>
-      <button id="theme-toggle">Toggle Dark Mode</button>
+
+      <!-- Tombol Toggle Dark Mode -->
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
-  <!-- Bagian Hero -->
+  <!-- BAGIAN HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>Halo, Saya <span class="highlight">Nama Anda</span></h1>
@@ -40,12 +63,12 @@
     </div>
   </section>
 
-  <!-- Section About -->
+  <!-- SECTION ABOUT -->
   <section id="about" class="about">
     <h2>Tentang Saya</h2>
     <div class="about-content">
       <img
-        src="https://via.placeholder.com/250"
+        src="assets/profile.jpg"
         alt="Foto Profil"
         class="profile-img"
       />
@@ -64,14 +87,14 @@
     </div>
   </section>
 
-  <!-- Section Projects -->
+  <!-- SECTION PROJECTS -->
   <section id="projects" class="projects">
     <h2>Proyek Terbaru</h2>
     <div class="cards">
       <!-- Card 1 -->
       <div class="card">
         <img
-          src="https://via.placeholder.com/300x180"
+          src="assets/project1.jpg"
           alt="Project 1"
         />
         <h3>Website E-Commerce</h3>
@@ -84,7 +107,7 @@
       <!-- Card 2 -->
       <div class="card">
         <img
-          src="https://via.placeholder.com/300x180"
+          src="assets/project2.jpg"
           alt="Project 2"
         />
         <h3>Landing Page Startup</h3>
@@ -97,7 +120,7 @@
       <!-- Card 3 -->
       <div class="card">
         <img
-          src="https://via.placeholder.com/300x180"
+          src="assets/project3.jpg"
           alt="Project 3"
         />
         <h3>Portal Informasi</h3>
@@ -110,7 +133,7 @@
     </div>
   </section>
 
-  <!-- Section Skills -->
+  <!-- SECTION SKILLS -->
   <section id="skills" class="skills">
     <h2>Keahlian</h2>
     <div class="skills-list">
@@ -133,7 +156,7 @@
     </div>
   </section>
 
-  <!-- Section Contact -->
+  <!-- SECTION CONTACT -->
   <section id="contact" class="contact">
     <h2>Kontak</h2>
     <p>
@@ -149,12 +172,12 @@
     </form>
   </section>
 
-  <!-- Bagian Footer -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 - Nama Anda. Dibuat dengan cinta.</p>
   </footer>
 
-  <!-- Memanggil file JavaScript -->
+  <!-- Import file JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
