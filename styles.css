@@ -1,0 +1,319 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mengatur font dan warna default */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #555;
+}
+
+#theme-toggle {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .highlight {
+  color: #3498db;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.cta-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #555;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-img {
+  border-radius: 100%;
+  max-width: 250px;
+  border: 2px solid #eee;
+}
+
+.about-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn-detail {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-detail:hover {
+  background-color: #555;
+}
+
+/* Skills Section */
+.skills {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  flex: 1 1 200px;
+  min-width: 200px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 1rem;
+}
+
+.skill-item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #f8f8f8;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: #666;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #222 !important;
+  color: #eee !important;
+}
+
+.dark-mode .navbar {
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode #theme-toggle {
+  border: 1px solid #eee;
+}
+
+.dark-mode .hero {
+  background: #333;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  border: 1px solid #444;
+}
+
+.dark-mode .card p {
+  color: #ddd;
+}
+
+.dark-mode .btn-detail {
+  background-color: #ddd;
+  color: #333;
+}
+
+.dark-mode .cta-btn {
+  background-color: #eee;
+  color: #333;
+}
+
+.dark-mode footer {
+  background-color: #333;
+}
+
+.dark-mode .skill-item {
+  background-color: #333;
+  border: 1px solid #444;
+}
+
+.dark-mode .skill-item h3,
+.dark-mode .skill-item p {
+  color: #ddd;
+}
