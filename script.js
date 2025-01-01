@@ -4,10 +4,15 @@ themeToggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
-// Responsive Menu Toggle
-const menuToggleBtn = document.getElementById('menu-toggle');
+// Toggle Menu (untuk tampilan mobile)
+const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 
-menuToggleBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+menuToggle.addEventListener('click', () => {
+  // Jika nav-links sedang hidden, maka tampilkan. Jika sedang tampil, sembunyikan.
+  if (navLinks.style.display === 'flex') {
+    navLinks.style.display = 'none';
+  } else {
+    navLinks.style.display = 'flex';
+  }
 });
